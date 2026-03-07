@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>MySite</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<!-- ヘッダー -->
+<header class="header">
+
+<button id="menuBtn">☰</button>
+
+<h1 class="logo" onclick="location.href='index.html'">
+MySite
+</h1>
+
+<form id="searchForm">
+<input type="text" id="searchInput" placeholder="検索">
+<button type="submit">🔍</button>
+</form>
+
+</header>
+
+
+<!-- ドロワーメニュー -->
+<nav id="drawer" class="drawer">
+
+<a href="#">ホーム</a>
+<a href="#">ニュース</a>
+<a href="#">プロダクト</a>
+<a href="#">お問い合わせ</a>
+
+</nav>
+
+
+<!-- スライドショー -->
+
+<section class="slider">
+
+<div class="slides">
+
+<img src="images/slide1.jpg" class="slide active">
+<img src="images/slide2.jpg" class="slide">
+<img src="images/slide3.jpg" class="slide">
+
+</div>
+
+<div class="slider-controls">
+
+<button id="playBtn">▶</button>
+
+<div id="dots"></div>
+
+</div>
+
+</section>
+
+
+<!-- タブゾーン -->
+
+<section class="content">
+
+<div class="tabs">
+
+<button class="tab active" data-tab="news">
+ニュース
+</button>
+
+<button class="tab" data-tab="product">
+プロダクト
+</button>
+
+</div>
+
+
+<div class="tab-content">
+
+<div id="news" class="tab-panel active">
+
+<article>
+<h3>ニュース1</h3>
+<p>サイト公開しました。</p>
+</article>
+
+<article>
+<h3>ニュース2</h3>
+<p>新機能を追加予定です。</p>
+</article>
+
+</div>
+
+
+<div id="product" class="tab-panel">
+
+<article>
+<h3>プロダクトA</h3>
+<p>AIツール</p>
+</article>
+
+<article>
+<h3>プロダクトB</h3>
+<p>Webサービス</p>
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+
+<script src="js/main.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/tabs.js"></script>
+
+</body>
+</html>
